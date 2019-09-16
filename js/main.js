@@ -46,6 +46,12 @@ cntxt.stroke();
 //script
 let screen = document.getElementById("screen"); //On appelle l'écran
 let btn = document.getElementsByClassName("btn"); //On appelle les boutons
+let nbtries; //nombre d'essais
+
+for (let i=0; i<btn.length; i++) 
+{
+    btn[i].addEventListener("click", test); // On cible la position de la lettre dans le tableau. Au clic, lancer le script proposition
+}
 
 let wordsTab = [
     "BIENVENUE",
@@ -61,8 +67,15 @@ let secretWord = wordsTab[Math.floor(Math.random()* wordsTab.length)] //Mot à d
         screen.innerHTML += "_ "; //On remplace par des _ dans l'écran
     }
 
-    for (let i=0; i<btn.length; i++)  //ON parcours le tableau de lettres
+function test()
+{
+    if (this.value === 0 )
     {
-        btn[i].addEventListener("click", test); // On cible la position de la lettre dans le tableau. Au clic, lancer le script proposition
+        console.log("Bravo!")
     }
+    else 
+    {
+        console.log("Dommage")
+    }
+}
 
