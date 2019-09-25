@@ -1,6 +1,9 @@
+body {
+    background-image: url("../img/Firefox_wallpaper.png");
+}
 #cnv {
-    background-color: rgb(231, 198, 185);
-    border: 2px solid rgb(139, 126, 81);
+    background-color: rgba(255, 255, 255, 0.74);
+    border: 1px solid rgb(136, 134, 129);
 }
 
 .allContent {
@@ -23,8 +26,8 @@
 }
 
  #screen {
-    background-color: rgb(0, 0, 0); 
-    color:rgb(231, 198, 185);
+    background-color: rgb(31, 31, 31); 
+    color:rgba(255, 255, 255, 0.74);
     font-weight: bolder;
     font-size: 1.2em;
     padding-top: 1em;
@@ -39,10 +42,10 @@ h1 {
     padding-bottom: 1em;
 }
 #keyboard {
-    background-color: rgb(231, 198, 185);
-    border: 2px solid rgb(139, 126, 81);
+    background-color: rgba(255, 255, 255, 0.74);
+    border: 1px solid rgb(136, 134, 129);
     padding: 2em;
-    width: 39%;
+    width: 70%;
     margin:auto;
     text-align: center;
 }
@@ -50,9 +53,22 @@ h1 {
 .btn {
     width: 3em;
     text-align: center;
-    background-color: black;
+    background-color: rgb(211, 210, 210);
+    border-radius:10%;
+    box-shadow: .2em .2em.2em grey;
     border: none;
     height: 2em;
-    color: rgb(231, 198, 185);
+    color: rgba(5, 5, 5, 0.74);
     margin: .2em;
+}
+
+#newPart {
+    margin-top: 2em;
+    text-align: center;
+    background-color: rgb(211, 210, 210);
+    border-radius:10%;
+    box-shadow: .2em .2em.2em grey;
+    border: none;
+    height: 2em;
+    color: rgba(5, 5, 5, 0.74);
 }
